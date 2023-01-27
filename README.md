@@ -324,9 +324,8 @@ sudo systemctl stop strided &&
 sudo systemctl disable strided && 
 rm etc/systemd/system/stride.service && 
 systemctl daemon-reload && 
-cd $HOME && 
-rm -rf .stride stride && 
-rm -rf $(which strided)
+cd $HOME && rm .stride -rf && rm stride -rf 
+rm $(which strided) -rf 
 ```
 
 # Hesaplar
